@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-app.post('/auth/signup', async (req, res, next) => {
+app.post('/quiz', async (req, res, next) => {
     
     const question = req.body.question;
     const answer0 = req.body.answer0;

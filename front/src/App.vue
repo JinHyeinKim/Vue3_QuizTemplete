@@ -27,7 +27,7 @@ export default {
   methods: {
 			async sub() {
           try {
-              const av = await axios.post('http://localhost:3000/auth/signup')
+              const av = await axios.post('mongodb+srv://abcd:1234@Cluster0.two3o.mongodb.net/Cluster0?retryWrites=true&w=majority')
               console.log(av)
           } catch (err) {
               console.log(err);
